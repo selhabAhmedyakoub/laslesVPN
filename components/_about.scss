@@ -1,0 +1,51 @@
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: calc(var(--default-padding) * 4);
+  gap: 4rem;
+
+  &__title {
+    color: var(--color-black);
+    line-height: 70px;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 20px;
+
+    &-span {
+      font-weight: 700;
+    }
+  }
+
+  &__text {
+    color: var(--color-grey);
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 50px;
+
+    &-span {
+      font-weight: 500;
+    }
+  }
+
+  &__button {
+    padding: 17.5px 77.5px;
+    background-color: var(--color-light-red);
+    border-radius: 10px;
+    color: var(--color-white);
+    box-shadow: 0 25px 50px (var(--color-light-red));
+    transition: var(--timing-animation) ease-in-out;
+
+    &:hover {
+      transition: var(--timing-animation) ease-in-out;
+      box-shadow: none;
+      border: 1px solid var(--color-light-red);
+      background-color: var(--color-white);
+      color: var(--color-light-red);
+    }
+  }
+  .about__img-img {
+    max-width: 100%;
+    height: auto;
+  }
+}

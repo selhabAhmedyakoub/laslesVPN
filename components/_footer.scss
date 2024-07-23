@@ -1,0 +1,104 @@
+/* footer*/
+.footer {
+  position: relative;
+  width: 100%;
+  background-color: var(--color-footer);
+  padding: 18rem 20rem 10rem;
+  margin-top: -10rem;
+}
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  .footer__left {
+    display: flex;
+    flex-direction: column;
+    &-head {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .footer__icon {
+    height: 36.23px;
+    width: 35px;
+  }
+  .footer__title {
+    font-size: 20px;
+    font-weight: 500;
+
+    &-span {
+      font-weight: 700;
+    }
+  }
+  .footer__text {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    max-width: 340px;
+    color: var(--color-grey);
+    margin-bottom: 30px;
+    &-span {
+      font-weight: 500;
+    }
+  }
+  .footer__socials {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  .footer__social {
+    height: 3.36rem;
+    width: 3.36rem;
+    margin-right: 20px;
+    background-color: white;
+    fill: var(--color-light-red);
+    border-radius: 50%;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+    transition: var(--timing-animation);
+    &:hover {
+      background-color: var(--color-light-red);
+      & .footer__svg {
+        fill: white;
+      }
+    }
+  }
+  .footer__svg {
+    width: 50%;
+    fill: var(--color-light-red);
+  }
+  .footer__copyright {
+    font-size: 16px;
+    font-weight: 400;
+    color: #afb5c0;
+    &-span {
+      font-weight: 500;
+    }
+  }
+  .footer__right {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .footer__right-product-item:nth-child(1) {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color-black);
+    margin-bottom: 20px;
+  }
+  .footer__right-product-item:not(:nth-child(1)) {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: var(--color-grey);
+    cursor: pointer;
+    transition: var(--timing-animation);
+    &:hover {
+      transition: var(--timing-animation) ease;
+      transform: scale(1.02);
+      color: var(--color-light-red);
+    }
+  }
+}
+/*End footer*/

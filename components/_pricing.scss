@@ -1,0 +1,103 @@
+/* Pricing section*/
+.pricing {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  &__heading {
+    max-width: 555px;
+  }
+  &__title {
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 60px;
+    color: var(--color-grey);
+  }
+
+  &__plans {
+    display: flex;
+
+    gap: 50px;
+  }
+}
+.pricing__plans {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricing__plan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  width: 330px;
+  height: auto;
+  border: 2px solid var(--color-border);
+  border-radius: 10px;
+}
+
+.pricing__plan:hover {
+  border-color: var(--color-light-red);
+
+  button {
+    background-color: var(--color-main-red);
+    color: white;
+    box-shadow: 0 0.78125rem 1.5625rem var(--color-shadow-red);
+  }
+}
+.plan__img {
+  margin-bottom: 30px;
+}
+.plan__title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.plan__list {
+  color: var(--color-grey);
+
+  &-item:not(:last-of-type) {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+}
+.plan__button {
+  margin-top: 20px;
+}
+.plan__free-price {
+  margin-top: 140px;
+  font-size: 25px;
+}
+.plan__standard-price {
+  margin-top: 92px;
+  font-size: 25px;
+  &-month {
+    font-weight: 400;
+    color: var(--color-grey);
+  }
+}
+.plan__prumium-price {
+  margin-top: 45px;
+  font-size: 25px;
+  &-month {
+    font-weight: 400;
+    color: var(--color-grey);
+  }
+}
+.fa-check {
+  color: var(--color-green);
+  margin-right: 1rem;
+}
+
+/* End Pricing section*/

@@ -1,0 +1,37 @@
+/* Stats section*/
+
+.stats {
+  margin-top: calc(var(--default-padding) * 4);
+  box-shadow: 0 25px 50px var(--color-light-grey);
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 37px 9rem;
+    box-shadow: 0 0 0 0.02rem rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  &-item {
+    display: flex;
+    gap: 36.5px;
+
+    &:nth-of-type(2) {
+      padding: 3rem 13rem;
+      border-left: 2px solid var(--color-light-grey);
+      border-right: 2px solid var(--color-light-grey);
+    }
+  }
+
+  &-numbers {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  &__icon {
+    height: 55px;
+    width: 55px;
+  }
+}
+
+/* End Stats section */
